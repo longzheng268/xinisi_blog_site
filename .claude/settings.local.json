@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git commit -m 'theme: switch to butterfly and migrate WordPress posts *)"
+      "Bash(git commit -m 'theme: switch to butterfly and migrate WordPress posts *)",
+      "Bash(npx hexo *)"
     ]
   }
 }
