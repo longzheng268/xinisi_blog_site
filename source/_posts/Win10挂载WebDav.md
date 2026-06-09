@@ -2,7 +2,7 @@
 title: Win10挂载WebDav
 date: 2025-10-24 11:41:46
 description: Windows 10 挂载 WebDav 的解决方案，推荐使用 RaiDrive 绕过默认 HTTPS 限制。
-cover: \images\webdav\network-drive.png
+cover: /images/webdav/network-drive.png
 categories:
   - 网络
 ---
