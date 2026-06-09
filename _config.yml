@@ -1,17 +1,17 @@
-title: Hexo
-subtitle: "A fast, simple & powerful blog framework powered by Node.js."
-description: "Hexo is a fast, simple & powerful blog framework powered by Node.js."
-author: Hexo
-language: en
-timezone: UTC
+title: 辛巳学习日志网
+subtitle: "学习与记录"
+description: "辛巳的学习博客，记录技术学习笔记与日常。"
+author: 辛巳
+language: zh-CN
+timezone: Asia/Shanghai
 
-url: https://hexo.io
+url: https://doc.lz-0315.com
 root: /
-permalink: news/:year/:month/:day/:title/
-archive_dir: news
+permalink: posts/:year/:month/:day/:title/
+archive_dir: archives
 code_dir: downloads/code
-new_post_name: :year-:month-:day-:title.md # File name of new posts
-post_asset_folder: true
+new_post_name: :year-:month-:day-:title.md
+post_asset_folder: false
 per_page: 10
 pretty_urls:
   trailing_index: false
@@ -22,13 +22,3 @@ theme: butterfly
 highlight:
   enable: true
   line_number: false
-
-disqus_shortname: hexojs
-google_analytics: UA-48498357-3
-fb_admins: 100000247608790
-algolia:
-  app_id: 7HZ261W96L
-  api_key: cb702f6ec26558e81b1f650f2e793b28
-  index_name: hexo
-twitter: hexojs
-github: hexojs/hexo

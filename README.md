@@ -1,52 +1,47 @@
-# Hexo Official Website
+# Xinisi Blog
 
-[![Tester](https://github.com/hexojs/site/actions/workflows/tester.yml/badge.svg)](https://github.com/hexojs/site/actions/workflows/tester.yml)
-[![Netlify Status](https://api.netlify.com/api/v1/badges/beeb7e86-4485-4381-8529-6b2a92df5dd7/deploy-status)](https://app.netlify.com/sites/hexo-site/deploys)
-[![Crowdin](https://badges.crowdin.net/hexo/localized.svg)](https://crowdin.com/project/hexo)
+基于 [Hexo](https://hexo.io/) + [Butterfly](https://butterfly.js.org/) 主题的个人博客。
 
-The website for Hexo.
+## 本地开发
 
-## Getting started
-
-Install dependencies:
+安装依赖：
 
 ```bash
-git clone https://github.com/hexojs/site.git
-cd site
 npm install
 ```
 
-Generate:
+启动本地服务器：
 
 ```bash
-hexo generate
+npm run dev
 ```
 
-Run server:
+访问 `http://localhost:4000` 预览。
+
+## 写文章
 
 ```bash
-hexo server
+npx hexo new post "文章标题"
 ```
 
-## Contributing
+文章会生成在 `source/_posts/` 目录下，使用 Markdown 编写。
 
-Before you open pull requests, please refer to the guide:
+## 构建部署
 
-- [Add your plugin to `hexo.io/plugins/`](https://hexo.io/docs/plugins#Publishing)
-- [Add your theme to `hexo.io/themes/`](https://hexo.io/docs/themes#Publishing)
-- [Update Documentation](https://hexo.io/docs/contributing#Updating-Documentation)
+生成静态文件：
 
-## Contributors
+```bash
+npm run build
+```
 
-- English - [tommy351](https://github.com/tommy351)
-- 正體中文 - [tommy351](https://github.com/tommy351)
-- 简体中文 - [pinggod](https://github.com/pinggod), [Xuanwo](https://github.com/Xuanwo)
-- Русский - [twirlfog](https://github.com/twirlfog)
-- 한국어 - [lazyrodi](https://github.com/lazyrodi)
-- Deutschland - [philippnagel](https://github.com/philippnagel)
-- Portuguese (Brazilian) - [lucianobarauna](https://github.com/lucianobarauna), [ramonsantos](https://github.com/ramonsantos), [MathMesquita](https://github.com/MathMesquita), [pedrorezende](https://github.com/pedrorezende), [gregoryfm](https://github.com/gregoryfm)
-- 日本語 - [KentarouTakeda](https://github.com/KentarouTakeda)
+输出目录为 `public/`，可部署到 GitHub Pages、Netlify、Vercel 等平台。
 
-## License
+## 项目结构
 
-[CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+```
+source/
+├── _posts/     # 博客文章
+├── about/      # 关于页
+├── icon/       # 图标资源
+└── ...         # 静态资源 (favicon, logo 等)
+```

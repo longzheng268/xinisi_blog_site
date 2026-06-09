@@ -46,17 +46,16 @@ code_blocks:
 # Formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
-  # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
+  fab fa-github: https://github.com/longzheng268 || Github || '#24292e'
 
 # --------------------------------------
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /favicon.ico
 
 avatar:
-  img: /img/butterfly-icon.png
+  img: /logo.png
   effect: false
 
 # Disable all banner images
@@ -182,9 +181,7 @@ index_layout: 3
 # 3: auto_excerpt (default)
 # false: do not show the article introduction
 index_post_content:
-  method: 3
-  # If you set method to 2 or 3, the length need to config
-  length: 500
+  method: 1
 
 # --------------------------------------
 # Post Settings
@@ -262,9 +259,9 @@ footer:
     since: 2025
   # Copyright of theme and framework
   copyright:
-    enable: true
-    version: true
-  custom_text:
+    enable: false
+    version: false
+  custom_text: <a href="https://beian.miit.gov.cn/" target="_blank">陇ICP备2024015550号-1</a>
 
 # --------------------------------------
 # Aside Settings

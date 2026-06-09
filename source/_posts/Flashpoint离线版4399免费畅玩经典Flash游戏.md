@@ -1,11 +1,15 @@
 ---
 title: 童年回忆！用Flashpoint "离线版4399"免费畅玩经典Flash游戏 FLASH格式 1GB
 date: 2025-10-09 14:08:51
+description: 用 Flashpoint 离线畅玩 20 万款经典 Flash 小游戏，断网也能玩，仅 1GB。
+cover: /images/flashpoint/cover.jpg
 categories:
   - 网络
 ---
 
 这个是把4399全部20万个小游戏下载，然后用类似天马的模拟器运行，支持搜索功能，
+
+<!-- more -->
 
 离线版意义在：
 
