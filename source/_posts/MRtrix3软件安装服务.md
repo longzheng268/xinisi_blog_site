@@ -2,6 +2,7 @@
 title: 专业MRtrix3软件安装服务 - 远程指导+完整配置
 date: 2025-10-25
 description: 提供专业 MRtrix3 扩散成像与纤维追踪软件安装服务，适用于 Ubuntu 等 Linux 系统，远程指导+完整配置。
+cover: /images/Mrtrix3/MRview.jpg
 categories:
   - 服务
 ---
