@@ -5,6 +5,10 @@ description: 用 Flashpoint 离线畅玩 20 万款经典 Flash 小游戏，断�
 cover: /images/flashpoint/cover.jpg
 categories:
   - 网络
+tags:
+  - Flash
+  - 游戏
+  - 怀旧
 ---
 
 这个是把4399全部20万个小游戏下载，然后用类似天马的模拟器运行，支持搜索功能，

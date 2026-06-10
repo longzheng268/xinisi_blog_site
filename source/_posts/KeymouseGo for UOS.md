@@ -5,6 +5,11 @@ description: 该版本KeymouseGO专为国产化终端优化，支持华为麒麟
 cover: /images/keymousego/run-ui.png
 categories:
   - 技术
+tags:
+  - 国产化
+  - UOS
+  - 自动化
+  - ARM
 ---
 
 ## 📦 发布信息：KeymouseGo ARM64 分发版

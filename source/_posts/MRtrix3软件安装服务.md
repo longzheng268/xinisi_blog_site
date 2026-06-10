@@ -5,6 +5,11 @@ description: 提供专业 MRtrix3 扩散成像与纤维追踪软件安装服务�
 cover: /images/Mrtrix3/MRview.jpg
 categories:
   - 服务
+tags:
+  - MRtrix3
+  - 脑成像
+  - Linux
+  - Ubuntu
 ---
 
 **价格**: 500元（可议价）

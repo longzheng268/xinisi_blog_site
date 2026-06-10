@@ -5,6 +5,11 @@ description: Serv00 的 SSH 地址在国内被墙？使用 CNAME 大法轻松解
 cover: /images/serv00/serv00_logo.png
 categories:
   - 技术
+tags:
+  - Serv00
+  - SSH
+  - DNS
+  - 翻墙
 ---
 
 ## 问题描述

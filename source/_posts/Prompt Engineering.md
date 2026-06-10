@@ -5,6 +5,10 @@ description: 谷歌 Prompt Engineering 白皮书中文翻译版，涵盖 AI 提�
 cover: /images/prompt-engineering/5versions.png
 categories:
   - AI
+tags:
+  - ChatGPT
+  - 提示词
+  - 谷歌
 ---
 
 谷歌的这份《Prompt Engineering》白皮书固然很高质，尤其是对AI提示词方面的理解，但遗憾的是全文是英文版，对于习惯中文阅读的小可爱们不方便。

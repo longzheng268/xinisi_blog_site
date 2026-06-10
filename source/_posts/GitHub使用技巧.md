@@ -5,6 +5,9 @@ description: GitHub 首页满屏社交信息流？分享几个直达核心功能
 cover: /images/github-tips/cover.png
 categories:
   - 技术
+tags:
+  - GitHub
+  - 效率工具
 ---
 
 最近发现不少人在吐槽 GitHub 的 UI 越来越"社交化"，首页满屏都是 Follow 过的用户点赞了什么，想找个 **Trending（热榜）** 或者自己 **Fork** 的库反而像是在玩密室逃脱。
