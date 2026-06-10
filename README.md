@@ -1,18 +1,17 @@
-# Xinisi Blog
+# 辛巳学习日志网
 
 基于 [Hexo](https://hexo.io/) + [Butterfly](https://butterfly.js.org/) 主题的个人博客。
 
-## 本地开发
+## 站点信息
 
-安装依赖：
+- **地址**：https://doc.lz-0315.com
+- **评论系统**：[Twikoo](https://twikoo.js.org/)（Cloudflare Workers + D1）
+- **部署平台**：腾讯云 EdgeOne
+
+## 本地开发
 
 ```bash
 npm install
-```
-
-启动本地服务器：
-
-```bash
 npm run dev
 ```
 
@@ -24,24 +23,39 @@ npm run dev
 npx hexo new post "文章标题"
 ```
 
-文章会生成在 `source/_posts/` 目录下，使用 Markdown 编写。
+文章生成在 `source/_posts/` 下，支持 `.md` 和 `.html` 两种格式。需要自定义样式的用 `.html`，普通文章用 `.md`。
+
+图片素材放在 `source/images/` 下按文章分目录：
+
+```
+source/images/
+├── router/      # 路由器刷机
+├── smartcar/    # 智能车
+├── flashpoint/  # Flashpoint
+└── webdav/      # WebDav
+```
+
+引用方式：
+
+- `.md`：`![描述](/images/router/xxx.jpg)`
+- `.html`：`<img src="/images/router/xxx.jpg" alt="描述" />`
 
 ## 构建部署
-
-生成静态文件：
 
 ```bash
 npm run build
 ```
 
-输出目录为 `public/`，可部署到 GitHub Pages、Netlify、Vercel 等平台。
+输出目录为 `public/`，通过 EdgeOne 部署。
 
 ## 项目结构
 
 ```
 source/
-├── _posts/     # 博客文章
-├── about/      # 关于页
-├── icon/       # 图标资源
-└── ...         # 静态资源 (favicon, logo 等)
+├── _posts/       # 博客文章（.md / .html）
+├── about/        # 关于页
+├── images/       # 文章图片（按文章分目录）
+├── icon/         # 图标资源
+├── favicon.ico   # 网站图标
+└── logo.png      # 网站 Logo
 ```
