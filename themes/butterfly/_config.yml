@@ -1055,9 +1055,9 @@ css_prefix: true
 # Insert the code to head (before '</head>' tag) and the bottom (before '</body>' tag)
 inject:
   head:
-    # - <link rel="stylesheet" href="/xxx.css">
+    - <style>.tk-powered-by{display:none!important}</style>
   bottom:
-    # - <script src="xxxx"></script>
+    - <div style="text-align:center;padding:8px 0;font-size:0.75rem;color:#999">© 2025 - 2026 By 辛巳 &nbsp; <a href="https://beian.miit.gov.cn/" target="_blank" style="color:#999">陇ICP备2024015550号-1</a></div>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
