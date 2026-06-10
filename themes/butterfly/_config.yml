@@ -1056,7 +1056,7 @@ inject:
   head:
     - <style>.tk-footer{display:none!important}</style>
   bottom:
-    # - <script src="xxxx"></script>
+    - <script>const petalColors=['#ff6b6b','#ff8e8e','#ffd86b','#6bffb3','#6bcaff','#b36bff','#ff6bda'];function createPetal(x,y,extra=false){const petal=document.createElement('div');const size=extra?Math.random()*18+18:Math.random()*12+8;petal.style.cssText=`position:fixed;left:${x-size/2}px;top:${y-size/2}px;width:${size}px;height:${size}px;pointer-events:none;z-index:9999;border-radius:50%;opacity:0.8;background:${petalColors[Math.floor(Math.random()*petalColors.length)]};box-shadow:0 0 8px 2px ${petalColors[Math.floor(Math.random()*petalColors.length)]};transform:rotate(${Math.random()*360}deg)`;document.body.appendChild(petal);setTimeout(()=>{petal.style.transition='all 0.8s cubic-bezier(.4,2,.6,1)';petal.style.opacity='0';petal.style.transform+=' scale(1.8) translateY(-30px)'},30);setTimeout(()=>petal.remove(),900)}function scatter(e){let x,y;if(e.touches){for(let i=0;i<e.touches.length;i++){x=e.touches[i].clientX;y=e.touches[i].clientY;createPetal(x,y)}}else{x=e.clientX;y=e.clientY;createPetal(x,y)}}function burst(e){let x,y;if(e.touches){for(let i=0;i<e.touches.length;i++){x=e.touches[i].clientX;y=e.touches[i].clientY;for(let j=0;j<12;j++)createPetal(x+Math.random()*40-20,y+Math.random()*40-20,true)}}else{x=e.clientX;y=e.clientY;for(let j=0;j<12;j++)createPetal(x+Math.random()*40-20,y+Math.random()*40-20,true)}}document.addEventListener('mousemove',scatter);document.addEventListener('touchmove',scatter);document.addEventListener('click',burst);document.addEventListener('touchstart',burst)</script>
 
 # CDN Settings
 # Don't modify the following settings unless you know how they work
