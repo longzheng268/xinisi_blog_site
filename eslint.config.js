@@ -1,18 +1,16 @@
 'use strict';
 
-const eslintConfig = require('eslint-config-hexo/eslint');
-
 module.exports = [
-  ...eslintConfig,
   {
     languageOptions: {
-      ecmaVersion: 2020
+      ecmaVersion: 2020,
+      sourceType: 'commonjs'
     },
     rules: {
       'no-undef': 'off'
     }
   },
   {
-    ignores: ['public', 'themes/navy/source/js/vendor', '.husky']
+    ignores: ['public', 'themes', '.husky']
   }
 ];
