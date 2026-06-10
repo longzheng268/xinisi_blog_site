@@ -289,7 +289,7 @@ aside:
       link: https://github.com/xxxxxx
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: '📢 本站已由 WordPress 迁移至 Hexo。旧链接兼容：<code>/?p=10</code> → 智能车、<code>/?p=139</code> → 路由器刷机、<code>/?p=159</code> → Flashpoint、<code>/?p=164</code> → WebDav'
   card_recent_post:
     enable: true
     # If set 0 will show all
