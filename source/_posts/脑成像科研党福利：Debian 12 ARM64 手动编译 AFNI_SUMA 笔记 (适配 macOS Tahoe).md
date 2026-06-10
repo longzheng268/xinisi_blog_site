@@ -1,6 +1,6 @@
 ---
 title: 脑成像科研党福利：Debian 12 ARM64 手动编译 AFNI/SUMA 笔记 (适配 macOS Tahoe)
-date: 2025-10-25
+date: 2026-3-15
 description: Debian 12 ARM64 手动编译 AFNI/SUMA 笔记，适配 macOS Tahoe，提供远程安装服务。
 cover: /images/afni/test-run.png
 categories:
