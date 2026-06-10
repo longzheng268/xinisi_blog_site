@@ -2,6 +2,7 @@
 title: GitHub 首页信息流太乱？分享几个"直达核心"的隐藏入口和优化方案
 date: 2025-10-25
 description: GitHub 首页满屏社交信息流？分享几个直达核心功能的隐藏路径和降噪方案，让你快速找到 Trending、Stars、Fork 等常用功能。
+cover: /images/github-tips/cover.png
 categories:
   - 技术
 ---
