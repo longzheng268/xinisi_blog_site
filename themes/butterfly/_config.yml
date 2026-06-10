@@ -18,9 +18,9 @@ nav:
   fixed: false
 
 menu:
-  Home: / || fas fa-home
-  Archives: /archives/ || fas fa-archive
-  About: /about/ || fas fa-user
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  关于: /about/ || fas fa-user
 
 # --------------------------------------
 # Code Blocks Settings
