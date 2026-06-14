@@ -1,20 +1,20 @@
 ---
 title: 专业MRtrix3软件安装服务 - 远程指导+完整配置
-date: 2025-10-25
-description: 提供专业 MRtrix3 扩散成像与纤维追踪软件安装服务，适用于 Ubuntu 等 Linux 系统，远程指导+完整配置。
+date: 2025-10-23
+description: 提供专业 MRtrix3 扩散成像与纤维追踪软件安装服务，适用于 Ubuntu 等 GNU/Linux 系统，远程指导+完整配置。
 cover: /images/Mrtrix3/MRview.jpg
 categories:
   - 服务
 tags:
   - MRtrix3
   - 脑成像
-  - Linux
+  - GNU/Linux
   - Ubuntu
 ---
 
-**价格**: 500元（可议价）
+**价格**: 60元（可议价）
 
-提供专业MRtrix3（扩散成像与纤维追踪软件）安装服务，适用于Ubuntu 22.04等Linux系统。服务包括：
+提供专业MRtrix3（扩散成像与纤维追踪软件）安装服务，适用于Ubuntu 22.04等GNU/Linux系统。服务包括：
 
 - 依赖包安装与配置（Qt5、Eigen、FFTW等）
 - 源码编译与优化（支持多线程加速）
