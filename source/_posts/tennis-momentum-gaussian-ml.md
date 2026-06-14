@@ -2,7 +2,7 @@
 title: 基于高斯动力学与机器学习的网球动量分析方法 | A Tennis Momentum Analysis Method Based on Gaussian Dynamics and Machine Learning
 date: 2024-09-27
 description: ADMIT 2024 会议论文全文中英双语版，提出结合高斯动力学模型与机器学习技术定量分析网球比赛中动量变化的新方法。
-cover: /images/tennis-momentum/fig1-gaussian-dynamics.png
+cover: /images/tennis-momentum/cover.png
 categories:
   - 论文
 tags:
