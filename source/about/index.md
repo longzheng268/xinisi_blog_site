@@ -32,12 +32,6 @@ layout: page
 - **基于语义分割的异构多核平台大数据挖掘算法** - 大数据与人工智能, 2023
 - **A Tennis Momentum Analysis Method Based on Gaussian Dynamics and Machine Learning** - ADMIT 2024, EI 会议论文
 
-## 开源项目
-
-- [openwrt-redmi-ax3000](https://github.com/longzheng268/openwrt-redmi-ax3000) - 红米 AX3000 OpenWrt 固件
-- [KeymouseGo](https://github.com/longzheng268/KeymouseGo) - UOS ARM64 适配版
-- [afni-gnu-linux-arm64](https://github.com/longzheng268/afni-gnu-linux-arm64) - AFNI ARM64 编译
-
 ## 联系方式
 
 如有问题或合作意向，欢迎在文章下方评论区留言。
