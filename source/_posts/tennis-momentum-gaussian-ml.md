@@ -76,7 +76,7 @@ tags:
 
 ## Abstract
 
-Momentum analysis in tennis matches has predominantly focused on qualitative methods, lacking systematic quantitative approaches. This study proposes a novel method that integrates Gaussian dynamics models with machine learning techniques to quantitatively analyze and predict momentum changes in tennis matches. By selecting and defining key indicators such as serve success rate and scoring rate, we developed an algorithm to identify and predict momentum shifts. The proposed method employs ensemble learning techniques, specifically Stacking, to combine multiple machine learning models, enhancing prediction accuracy and execution efficiency. Experimental validation using data from major tennis tournaments, including the 2023 Wimbledon Championships, demonstrates the effectiveness of the proposed approach. The results show that the Stacking model outperforms individual models in accuracy and robustness, providing scientific decision support for coaches and players. This method has low computational requirements, is simple to implement, and considers a wide range of variables, making it highly efficient. Future research will focus on further optimizing the model and applying it to other sports and match types.
+All Momentum analysis in tennis matches has predominantly focused on qualitative methods, lacking systematic quantitative approaches. This study proposes a novel method that integrates Gaussian dynamics models with machine learning techniques to quantitatively analyze and predict momentum changes in tennis matches. By selecting and defining key indicators such as serve success rate and scoring rate, we developed an algorithm to identify and predict momentum shifts. The proposed method uses ensemble learning techniques, specifically Stacking, to combine multiple machine learning models, enhancing prediction accuracy and execution efficiency. Experimental validation using data from major tennis tournaments, including the 2023 Wimbledon Championships, demonstrates the effectiveness of the proposed approach. The results show that the Stacking model outperforms individual models in accuracy and robustness, providing scientific decision support for coaches and players. This method has low computational requirements, is simple to implement, and considers a wide range of variables, making it highly efficient. Future research will focus on further optimizing the model and applying it to other sports and match types.
 
 网球比赛中的动量分析主要依赖定性方法，缺乏系统化的定量研究手段。本研究提出了一种将高斯动力学模型与机器学习技术相结合的新方法，用于定量分析和预测网球比赛中的动量变化。通过选取和定义发球成功率、得分率等关键指标，我们开发了一套识别和预测动量转移的算法。该方法采用集成学习技术（特别是 Stacking）来组合多个机器学习模型，从而提升预测精度和执行效率。利用 2023 年温布尔登网球锦标赛等大型赛事数据进行实验验证，结果表明 Stacking 模型在准确性和鲁棒性方面优于单一模型，能够为教练和运动员提供科学的决策支持。该方法计算需求低、实现简单、变量覆盖广泛，具有较高的效率。未来研究将进一步优化模型并将其推广到其他运动项目和比赛类型。
 
@@ -120,9 +120,11 @@ We assume that the observed data from a given match are noisy realizations of an
 
 我们假设从给定比赛中观测到的数据是在随机时间点上对某个潜在平滑随机函数进行评估后得到的含噪声实现。设 d(t) 为生成观测数据的潜在函数。我们的目标是从观测到的时间序列数据中推断 d(t) 及其时间动态特征。我们使用以下高斯过程模型：
 
-where μ(t) is the mean function and k(t,t') is the covariance function. By selecting appropriate mean and covariance functions, we can capture the dynamic changes in score differences throughout the match.
+$$d(t) \sim GP(\mu(t), k(t, t'))$$
 
-其中 μ(t) 是均值函数，k(t,t') 是协方差函数。通过选择适当的均值函数和协方差函数，我们可以捕捉整场比赛中得分差异的动态变化。
+where $\mu(t)$ is the mean function and $k(t, t')$ is the covariance function. By selecting appropriate mean and covariance functions, we can capture the dynamic changes in score differences throughout the match.
+
+其中 $\mu(t)$ 是均值函数，$k(t, t')$ 是协方差函数。通过选择适当的均值函数和协方差函数，我们可以捕捉整场比赛中得分差异的动态变化。
 
 #### 2. Experimental Validation
 
@@ -166,7 +168,13 @@ We use the Stacking ensemble learning method, where the predictions from multipl
 
 我们使用 Stacking 集成学习方法，将多个单一模型的预测结果作为二级模型的输入进行综合预测。由于 XGBoost 在单一模型中表现最佳，因此将其作为二级模型。
 
-**Table 1: Hyperparameter Settings for Individual and Ensemble Models**
+**Table 3: Hyperparameter Settings for Individual and Ensemble Models**
+
+| Model    | Hyperparameter settings                                                                                          |
+| -------- | ---------------------------------------------------------------------------------------------------------------- |
+| XGBoost  | learning_rate=0.05, n_estimators=53, reg.alpha=0.005, n_jobs=8, max_depth=7, \_type='total cover'                |
+| LightGBM | num_leaves=9, max_depth=5, learning_rate=0.05, n_estimators=80, n_jobs=-8                                        |
+| CatBoost | iterations=60, learning_rate=0.05, depth=10, silent=True, thread_cotask_type='CPU', nthread=8, cat_features=None |
 
 ---
 
@@ -242,7 +250,14 @@ We use data from the 2023 Wimbledon Final to validate the effectiveness of the m
 
 我们使用 2023 年温网决赛的数据来验证动量变化识别算法的有效性。通过将算法预测的动量变化与实际比赛结果进行比较，可以评估算法的准确性和鲁棒性。
 
-**Table 2: Performance Evaluation of the Momentum Change Identification Algorithm**
+**Table 3: Performance Evaluation of the Momentum Change Identification Algorithm**
+
+| Metric        | Value |
+| ------------- | ----- |
+| Accuracy (%)  | 85.3  |
+| Precision (%) | 83.7  |
+| Recall (%)    | 84.5  |
+| F1 Score      | 84.1  |
 
 With the identification and prediction from this algorithm, players and coaches can better understand key moments in the match and develop corresponding strategies to respond to momentum changes.
 
@@ -266,7 +281,14 @@ To further optimize model performance, we use grid search and cross-validation m
 
 为了进一步优化模型性能，我们使用网格搜索和交叉验证方法来调整模型的超参数，确保训练和预测的效率与准确性。
 
-**Table 3: Performance Comparison of Ensemble and Base Models**
+**Table 4: Performance Comparison of Ensemble and Base Models**
+
+| Model    | Accuracy | Precision | Recall | RMSE   | Accuracy_s | R²    |
+| -------- | -------- | --------- | ------ | ------ | ---------- | ----- |
+| LightGBM | 0.601    | 0.578     | 0.609  | 318.57 | 0.458      | 0.617 |
+| CatBoost | 0.592    | 0.582     | 0.598  | 289.63 | 0.412      | 0.608 |
+| XGBoost  | 0.621    | 0.612     | 0.634  | 257.15 | 0.378      | 0.637 |
+| Stacking | 0.674    | 0.649     | 0.677  | 214.59 | 0.349      | 0.679 |
 
 Through model integration and optimization, we significantly improved prediction accuracy and execution efficiency, making this approach more reliable for practical decision support.
 
